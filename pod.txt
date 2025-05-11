@@ -1,0 +1,31 @@
+k8s uses yaml file for creation of objects such as:
+-pods
+-replicas
+-deployment
+-service
+
+----------------------------------------------------------------
+k8s definition file always contains 4 top level fields.
+apiVersion:  -> k8s apiversion which is used to create the object. (String value)
+kind:        -> represents type of object we are going to Create.  (String value)
+metadata:     -> meta data is the data about the object eg: name , labels etc. (Dictionary value) -> key & value format. 
+                 name , labels - used to identify object later point of time.
+                 ex: 100 pods running frontend application & 100 pods backend application or database.
+                 it is difficult to group this pods once they are deployed.
+                when we apply labels we can filter later part of time.
+spec:        -> specification (provide additional info of object). )  (dictionary value)
+------------------------------------------------------------------
+
+api Version for different object:-
+
+kind           Version
+POD            V1
+Service        v1
+ReplicaSet     apps/v1
+
+--------------------------------------------------------------------
+
+Note: 
+-> pod can have multiple containers
+
+
