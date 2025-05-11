@@ -28,4 +28,16 @@ ReplicaSet     apps/v1
 Note: 
 -> pod can have multiple containers
 
+--------------------------------------------------------------------
+
+Commands:-
+
+1) to create pod using yaml file:-
+kubectl create -f pod-definition.yaml
+
+2) To see list of pods avaiable:-
+kubectl get pods
+
+3) To see the details info of pod:-
+kubectl describe pod myapp-pod
 
