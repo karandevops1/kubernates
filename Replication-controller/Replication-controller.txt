@@ -1,0 +1,21 @@
+single pod running our application:
+for some reason application crashes and pod fails ,user will no longer will be able to access the application.
+
+so to prevent user from losing access to our application, we should have more than pod running at same time.
+if one pod fails we can use another still we can access the application which is running in another pod.
+
+replication controller is used to run multiple instances of same pod in k8s cluster.
+
+replication controller ensures that the specified number of pods are running at all times.
+
+another reason we need replication controller is to create multiple pod to share load across them.
+
+example:
+single pod serving a set of users, when number of user increases , we deploy additional pod to balance the load across the 2pods.
+
+if the demand further increases and if we were to run out of resoureces on the first node ,
+we could deploy additional pods accross the other nodes in the cluster.
+
+as we can see rc spans accross multiple nodes in cluster.
+it helps us balance the load accross multiple pod on different nodes as well as scale our application.
+
