@@ -28,4 +28,70 @@ ReplicaSet     apps/v1
 Note: 
 -> pod can have multiple containers
 
+--------------------------------------------------------------------
+
+General Commands:-
+
+1) to create pod using yaml file:-
+kubectl create -f pod-definition.yaml
+
+2) To see list of pods avaiable:-
+kubectl get pods
+
+3) To see the details info of pod:-
+kubectl describe pod myapp-pod
+
+-----------------------------------------------------------------------
+
+Create a Pod (from YAML):
+kubectl apply -f pod.yaml
+
+View Pods:
+kubectl get pods
+kubectl get pods -n <namespace>        # In specific namespace
+
+Describe Pod:
+kubectl describe pod <pod-name>
+
+ Delete Pod:
+kubectl delete pod <pod-name>
+
+Execute Command in Pod (like SSH into it):
+kubectl exec -it <pod-name> -- /bin/bash
+
+Or if it's using sh:
+kubectl exec -it <pod-name> -- /bin/sh
+
+View Pod Logs:
+kubectl logs <pod-name>
+
+View Pod Logs For specific container in a pod:
+kubectl logs <pod-name> -c <container-name>
+
+Restart a Pod (by deleting—it will recreate if managed by a Deployment):
+kubectl delete pod <pod-name>
+
+Run a Temporary Pod (for testing):
+kubectl run testpod --image=nginx --restart=Never --rm -it -- bash
+------------------------------------------------------------------------------
+
+Quickly run a pod:
+kubectl run nginx --image=nginx
+
+Create ephemeral debug container in a pod (K8s v1.18+):
+kubectl debug pod/<name>
+
+View CPU/memory usage:
+kubectl top pod
+
+List all pods across namespaces
+kubectl get pods --all-namespaces
+
+Output full YAML definition of a pod:
+kubectl get pod <name> -o yaml
+
+Access pod service locally:
+kubectl port-forward pod/<name> <local-port>:<pod-port>
+
+----------------------------------------------------------------------------------
 
