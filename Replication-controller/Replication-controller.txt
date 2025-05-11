@@ -19,3 +19,14 @@ we could deploy additional pods accross the other nodes in the cluster.
 as we can see rc spans accross multiple nodes in cluster.
 it helps us balance the load accross multiple pod on different nodes as well as scale our application.
 
+---------------------------------------------------------------------------------------------------------------------
+d/b Replication controller and ReplicaSet:
+Replication controller:- is the older Technology that is being replaced by replica set.
+
+ReplicaSet is the new recommended way to setup replication.
+
+above point are applicable  for both technology , minor difference.
+-------------------------------------------------------------------------------------------------------------------
+
+
+
