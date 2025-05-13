@@ -8,7 +8,7 @@ metadata:
     type: front-end
 spec:           # whats inside object we are creating that need to be mentioned in spec.
   template:
-      metadata:
+      metadata:                              ##
         name: myapp-pod  # pod name
         labels:
           app: myapp
@@ -16,7 +16,7 @@ spec:           # whats inside object we are creating that need to be mentioned 
      spec:
         containers:
       - name: nginx-container  # container name
-        image: nginx
+        image: nginx                         ##
 
   # we create a template section under spec to provide a pod template to be used by the replication controller to create replicas.
   # move all the content of the pod defintion file into template section of the replication controller except apiVersion and kind.
