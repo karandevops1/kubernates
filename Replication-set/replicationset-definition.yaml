@@ -24,3 +24,7 @@ same difference between replicaset and replication controller.
 replicationset require selector definition.
 
 selector section helps the replica set to identify what pod fall under it.
+
+but why we need to specify what pods fall under it if you have provided the contents of the pod defintion file itself in the template?
+
+bcoz replicaset can also manage pods that were not created as part of the replica set creation.
