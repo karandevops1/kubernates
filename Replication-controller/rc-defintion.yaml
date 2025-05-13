@@ -1,19 +1,19 @@
-#Replication-controller creates multiple instances of pods.
+#Replication-controller creates multiple instances of pods.  (nested of 2 definition files).
 apiVersion: v1
 kind: ReplicationController
-metadata:
+metadata:                                                 # replication controller
   name: myapp-rc
   labels:
     app: myapp
     type: front-end
-spec:           # whats inside object we are creating that need to be mentioned in spec.
+spec:           # whats inside object we are creating that need to be mentioned in spec.    # replication controller
   template:
-      metadata:                              ##
+      metadata:                              ## pod
         name: myapp-pod  # pod name
         labels:
           app: myapp
           type: front-end
-     spec:
+     spec:                                    #pod
         containers:
       - name: nginx-container  # container name
         image: nginx                         ##
