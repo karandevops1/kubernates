@@ -28,3 +28,10 @@ spec:           # whats inside object we are creating that need to be mentioned 
 # to crete replication controller use below command:
 kubectl create -f rc-defintion.yaml
 when replication controller is created , it first creates the pods using pod definition template as many as required.
+
+#to view list of replication controllers use below command:
+kubectl get replicationcontroller
+
+to see the pods created by replication controller:
+kubectl get pods  
+names of this pod will start from replication controller.
