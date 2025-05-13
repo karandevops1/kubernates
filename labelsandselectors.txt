@@ -3,3 +3,5 @@ example:
 we deployed front apllication over 3 pods:
 we could like to create replication controller or replication set to ensure that we have 3 active pods running at anytime.
  we can use replicationset to montior existing pods if you have them already created.
+
+the role of replication set is to montior the pods and if any of them were to fail deploy new onces
