@@ -14,3 +14,9 @@ this is where labelling our pods during cretion is mandory.
 so we provide lables as filter for replicaset.
 
 this way replicaset nows which pods to montior
+
+-----------------
+
+note:
+in replicaset imagine if pods are already created we need to keep 3 pods in desired state:
+in that case in templte session we also need to provide pod details bcoz if any pod gets failed rs need to create new pods by refering template.
