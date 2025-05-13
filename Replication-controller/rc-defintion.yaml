@@ -25,4 +25,6 @@ spec:           # whats inside object we are creating that need to be mentioned 
   # we create a template section under spec to provide a pod template to be used by the replication controller to create replicas.
   # move all the content of the pod defintion file into template section of the replication controller except apiVersion and kind.
   
-
+# to crete replication controller use below command:
+kubectl create -f rc-defintion.yaml
+when replication controller is created , it first creates the pods using pod definition template as many as required.
