@@ -18,6 +18,10 @@ spec:           # whats inside object we are creating that need to be mentioned 
       - name: nginx-container  # container name
         image: nginx                         ##
 
+ replicas:                               # input how many replicas we need
+
+  #note:
+  #template and replicas are sibings of spec so theu must be in same vertical line.
   # we create a template section under spec to provide a pod template to be used by the replication controller to create replicas.
   # move all the content of the pod defintion file into template section of the replication controller except apiVersion and kind.
   
