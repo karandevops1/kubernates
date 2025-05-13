@@ -8,3 +8,5 @@ the role of replication set is to montior the pods and if any of them were to fa
 
 how replicationset know which pods to montior?
 there could be 100 of pods running different application in cluster.
+
+this is where labelling our pods during cretion is mandory.
