@@ -23,4 +23,4 @@ same difference between replicaset and replication controller.
 
 replicationset require selector definition.
 
-selector section helps the replica set to identify what parts fall under it.
+selector section helps the replica set to identify what pod fall under it.
