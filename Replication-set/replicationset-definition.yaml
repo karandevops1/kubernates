@@ -18,6 +18,9 @@ spec:           # whats inside object we are creating that need to be mentioned 
         image: nginx                         ##
 
  replicas:                               # input how many replicas we need
+ selector:
+   matchLabels:  # used to match the labels specified under labels on the pod.
+     type: front-end
 
 same difference between replicaset and replication controller.
 
@@ -28,3 +31,12 @@ selector section helps the replica set to identify what pod fall under it.
 but why we need to specify what pods fall under it if you have provided the contents of the pod defintion file itself in the template?
 
 bcoz replicaset can also manage pods that were not created as part of the replica set creation.
+
+# to create replicaset 
+kubectl create -f replicaset-defintion.yaml
+
+to see the list of replicationset
+kubectl get replicaset
+
+to see the list of pods 
+kubectl get pods
