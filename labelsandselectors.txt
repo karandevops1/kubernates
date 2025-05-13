@@ -12,3 +12,5 @@ there could be 100 of pods running different application in cluster.
 this is where labelling our pods during cretion is mandory.
 
 so we provide lables as filter for replicaset.
+
+this way replicaset nows which pods to montior
