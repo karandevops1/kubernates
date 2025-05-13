@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:                                                 # replication controller
+  name: myapp-replicaSet
+  labels:
+    app: myapp
+    type: front-end
+spec:           # whats inside object we are creating that need to be mentioned in spec.    # replication controller
+  template:
+      metadata:                              ## pod
+        name: myapp-pod  # pod name
+        labels:
+          app: myapp
+          type: front-end
+     spec:                                    #pod
+        containers:
+      - name: nginx-container  # container name
+        image: nginx                         ##
+
+ replicas:                               # input how many replicas we need
+
+same difference between replicaset and replication controller.
+
+replicationset require selector definition.
