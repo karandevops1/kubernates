@@ -7,4 +7,10 @@ metadata:
     app: myapp
     type: front-end
 spec:           # whats inside object we are creating that need to be mentioned in spec.
+  template:
+
+
+  # we create a template section under spec to provide a pod template to be used by the replication controller to create replicas.
+  # move all the content of the pod defintion file into template section of the replication controller except apiVersion and kind.
+  
 
