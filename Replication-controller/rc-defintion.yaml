@@ -1,0 +1,10 @@
+#Replication-controller creates multiple instances of pods.
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myapp-rc
+  labels:
+    app: myapp
+    type: front-end
+spec:           # whats inside object we are creating that need to be mentioned in spec.
+
