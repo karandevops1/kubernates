@@ -10,3 +10,6 @@ kubectl scale --replicas=6 -f replicaset-definition.yaml
 
 3)using below command we use type(replicaset) and name(myapp-replicaset):
 kubectl scale --replicas=6 replicaset myapp-replicaset
+
+note:
+based on load also we can scale it is advanced concept.
