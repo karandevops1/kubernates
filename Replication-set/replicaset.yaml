@@ -18,3 +18,7 @@ spec:
       containers:
     - name: nginx
       image: nginx             #  select all 2 times tab  to align
+
+important note:
+if replicaset already cretaed with labels app: myapp and if we try to create pod with same labels the pod will be in terminated state.
+then replicaset controller delete that pod automatically after sometime.
