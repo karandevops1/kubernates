@@ -11,4 +11,6 @@ to scale replica without modifying file:
 kubectl scale --replicaset=6 -f replicaset-definition.yaml
 
 
+
+
   
