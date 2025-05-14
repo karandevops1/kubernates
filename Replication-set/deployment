@@ -1,1 +1,5 @@
+rolling updates:
+roll back:
+make pause and make changes.
 
+deployment file is same as replicaset file execpt kind it will be deployment.
