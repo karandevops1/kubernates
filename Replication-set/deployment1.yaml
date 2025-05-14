@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:                                                 # replication controller
+metadata:                                                 
   name: myapp-deployment
   labels:
     app: myapp
     type: front-end
-spec:           # whats inside object we are creating that need to be mentioned in spec.    # replication controller
+spec:           # whats inside object we are creating that need to be mentioned in spec.    
   template:
       metadata:                              ## pod
         name: myapp-pod  # pod name
