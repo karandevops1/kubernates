@@ -6,4 +6,5 @@ kubectl get replicaset
 
 to delete the replicaset:
 kubectl delete replicaset myapp-replicaset (also deletes all underlying pods).
+
   
