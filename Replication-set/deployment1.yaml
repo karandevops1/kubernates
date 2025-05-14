@@ -21,3 +21,16 @@ spec:           # whats inside object we are creating that need to be mentioned 
  selector:
    matchLabels:  # used to match the labels specified under labels on the pod.
      type: front-end
+
+
+     commands:
+     to create deployment:
+kubectl create -f deployment-defintion.yaml
+(when deployment is created automatically replicaset is created with deployment name)
+replicationset automatically creates pods
+kubectl get pods
+
+to see list of deployment:
+kubectl get deployments
+
+kubectl get replicaset
