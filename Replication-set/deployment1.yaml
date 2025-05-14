@@ -1,1 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:                                                 # replication controller
+  name: myapp-deployment
+  labels:
+    app: myapp
+    type: front-end
+spec:           # whats inside object we are creating that need to be mentioned in spec.    # replication controller
+  template:
+      metadata:                              ## pod
+        name: myapp-pod  # pod name
+        labels:
+          app: myapp
+          type: front-end
+     spec:                                    #pod
+        containers:
+      - name: nginx-container  # container name
+        image: nginx                         ##
 
+ replicas: 3                               # input how many replicas we need
+ selector:
+   matchLabels:  # used to match the labels specified under labels on the pod.
+     type: front-end
