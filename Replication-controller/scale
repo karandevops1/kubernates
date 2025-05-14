@@ -1,5 +1,7 @@
 scaling command:
 
+in replicaset number of replica is specified as 3 who to change it as 6:
+
 kubectl replace -f replicaset-definition.yaml
 
 kubectl scale --replicas=6 -f replicaset-definition.yaml
