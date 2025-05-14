@@ -10,6 +10,9 @@ kubectl delete replicaset myapp-replicaset (also deletes all underlying pods).
 to scale replica without modifying file:
 kubectl scale --replicaset=6 -f replicaset-definition.yaml
 
+to see more details about replicaset:
+kubectl describe replicaset myapp-replicaset
+
 
 
 
