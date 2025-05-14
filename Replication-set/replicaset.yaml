@@ -1,1 +1,12 @@
-
+appVersion: apps/v1
+kind: Replicaset
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+spec:
+  selector:
+    matchLabeles:
+      env: production
+  replicas: 3
+  template:
