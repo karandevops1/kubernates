@@ -3,3 +3,13 @@ roll back:
 make pause and make changes.
 
 deployment file is same as replicaset file execpt kind it will be deployment.
+
+rollingupdate -> is default depoyment strategy.
+
+update and rollback:
+rollout command:
+kubectl rollout status deployment/myapp-deployment
+
+to see revision history of deployment:
+kubectl rollout history deployment/myapp-deployment
+
