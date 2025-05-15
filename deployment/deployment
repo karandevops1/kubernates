@@ -13,3 +13,12 @@ kubectl rollout status deployment/myapp-deployment
 to see revision history of deployment:
 kubectl rollout history deployment/myapp-deployment
 
+kubectl set image deployment/myapp-deployment /nginx-conatiner=nginx:1.9.1 -> check in net command to update image in application.
+
+recreate vs rollingupdate:
+
+recraete :
+all replicaset will be 0 then all scale up.
+
+rollingupdate:
+one replicaset scale down one at a time and one at time scale.
