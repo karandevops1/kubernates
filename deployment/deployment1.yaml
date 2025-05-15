@@ -34,3 +34,8 @@ to see list of deployment:
 kubectl get deployments
 
 kubectl get replicaset
+
+kubectl get all
+deployment
+replicaset
+pods
