@@ -1,1 +1,11 @@
+Networking in k8s:
+
+single node k8s cluster:
+minikube node has ip address eg: 192.168.1.2
+
+inside node , pod is created. 
+in docker ip addredd is assigned to docker container.
+but in k8s ip address is assigned to pod.
+each pod gets its own internall ip address.
+laptop ip: 192.168.1.10
 
