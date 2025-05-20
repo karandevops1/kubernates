@@ -15,4 +15,4 @@ how pod gets ip address?
 we create an internal private network with the address 10.244.0.2
 and all pods are attached.
 
-when we deploy multiple pods , they all get a separate ip address from its network.
+when we deploy multiple pods , they all get a separate ip address from this network.
