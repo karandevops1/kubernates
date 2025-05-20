@@ -9,3 +9,10 @@ but in k8s ip address is assigned to pod.
 each pod gets its own internall ip address.
 laptop ip: 192.168.1.10
 
+pod ip address: 10.244.0.2
+
+how pod gets ip address?
+we create an internal private network with the address 10.244.0.2
+and all pods are attached.
+
+when we deploy multiple pods , they all get a separate ip address from its network.
