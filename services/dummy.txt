@@ -27,3 +27,19 @@ if i want to be able to access the webserver from my own laptop without having t
 so we need something in middle to help us map requests to node from our laptop through the node to the pod running the web container.
 
 this is where k8s services comes into play.
+
+k8s service is an object just like replicaset or deployments that we worked with.
+
+one of use case is to listen to a port on the node and forward requests on that port to port running the web application.
+this type of service is known is node port service bcoz service listen to port on the node and forward request to pods.
+------------------------------------------------
+types of services:
+Node port:
+where the service makes an internal port accessible on a port on the node.
+
+cluster ip:
+in this case , service creates a virtual ip inside the cluster to enable communication between different services , such as a set of front end servers to set of backend servers.
+
+load balancer:
+
+--------------------------------------------
