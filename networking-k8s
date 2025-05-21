@@ -23,4 +23,4 @@ when we deploy multiple pods , they all get a separate ip address from this netw
 pod can communicate with each other through this ip address.
 but access pod using internal address may not be a good idea, it subject to change when pods are recreated,
 
-there is beeter way to commuincate wyth pod.
+there is better way to commuincate wyth pod.
