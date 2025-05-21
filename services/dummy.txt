@@ -14,3 +14,16 @@ internal pod network is in the range 10.244.0.0
 pod has ip address 10.244.0.2
 
 In most Kubernetes setups, you cannot access a Pod directly via its internal IP (e.g., 10.244.0.2) from outside the cluster,
+
+option to see the web page:
+
+ssh: into node
+inside k8s node we can see:
+curl http://10.244.0.2
+hello world!!
+
+if i want to be able to access the webserver from my own laptop without having to switch into the node and simply by accessing the ip of the k8s node.
+
+so we need something in middle to help us map requests to node from our laptop through the node to the pod running the web container.
+
+this is where k8s services comes into play.
