@@ -4,7 +4,7 @@ single node k8s cluster:
 minikube node has ip address eg: 192.168.1.2
 
 inside node , pod is created. 
-in docker ip addredd is assigned to docker container.
+in docker ip address is assigned to docker container.
 but in k8s ip address is assigned to pod.
 each pod gets its own internall ip address.
 laptop ip: 192.168.1.10
@@ -21,6 +21,6 @@ when we deploy multiple pods , they all get a separate ip address from this netw
 10.244.0.4
 
 pod can communicate with each other through this ip address.
-but access pod using internal address may not be a good idea, it subject to chnage when pods are recreated,
+but access pod using internal address may not be a good idea, it subject to change when pods are recreated,
 
 there is beeter way to commuincate wyth pod.
