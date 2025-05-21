@@ -1,0 +1,16 @@
+k8s services enables communication between various components within and outside of the application.
+
+k8s services helps us connect application together with other application or users.
+
+example:
+we deployed our pod having a web application running on it.
+how do we as an external user access the web page?
+
+exesiting setup example:
+k8s node has ip address 192.168.1.2
+laptop is on the same network as well 192.168.1.10
+
+internal pod network is in the range 10.244.0.0
+pod has ip address 10.244.0.2
+
+In most Kubernetes setups, you cannot access a Pod directly via its internal IP (e.g., 10.244.0.2) from outside the cluster,
