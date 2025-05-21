@@ -43,3 +43,22 @@ in this case , service creates a virtual ip inside the cluster to enable communi
 load balancer:
 
 --------------------------------------------
+
+The port on the POD were the actual web server is running is port 80.
+And it is referred to as the targetPort, because that is were the service forwards the requests to.
+
+The second port is the port on the service itself. It is simply referred to as the port. 
+
+Remember, these terms are from the viewpoint of the service. The service is in fact 
+like a virtual server inside the node.
+
+ Inside the cluster it has its own IP address. And 
+that IP address is called the Cluster-IP of the service.
+
+And finally we have the port on 
+the Node itself which we use to access the web server externally. And that is known 
+as the NodePort. As you can see it is 30008. 
+
+important notes:
+ That is because NodePorts can only be in 
+a valid range which is from 30000 to 32767. 
