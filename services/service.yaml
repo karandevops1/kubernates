@@ -11,3 +11,7 @@ spec:
   selector:                  // many pod many have 80 port so pod lables we need to mention.
     app: myapp
     type: front-end
+
+
+service mapped to single pod we know:
+when multiple pods:
