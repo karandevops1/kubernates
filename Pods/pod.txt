@@ -9,6 +9,9 @@ k8s uses yaml file for creation of objects such as:
 pod:
 In Kubernetes, a pod is the smallest, most basic unit of deployment. It's a group of one or more application containers that share resources, like storage and networking. Think of a pod as a logical host where multiple containers can live and collaborate, sharing the same IP address and port range. 
 
+#creates a Pod, not a Deployment.
+kubectl run my-pod --image=nginx
+
 -----------------------------------------------------------------
 k8s definition file always contains 4 top level fields.
 apiVersion:  -> k8s apiversion which is used to create the object. (String value)
