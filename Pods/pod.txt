@@ -101,5 +101,9 @@ kubectl get pod <name> -o yaml
 Access pod service locally:
 kubectl port-forward pod/<name> <local-port>:<pod-port>
 
+kubectl logs myapp-pod -c nginx-container
+kubectl logs myapp-pod -c sidecar-container
+
+
 ----------------------------------------------------------------------------------
 
