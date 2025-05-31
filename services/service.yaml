@@ -12,6 +12,10 @@ spec:
     app: myapp
     type: front-end
 
+commands:
 
+kubectl create -f service-defintion.yaml
+
+kubectl get svc
 service mapped to single pod we know:
 when multiple pods:
